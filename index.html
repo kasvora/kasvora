@@ -1,0 +1,548 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Kasvora Capital — Structured Equity & Select Digital Assets</title>
+    <meta name="description"
+        content="Kasvora Capital is a private capital platform engaged in structured equity transactions, including committed equity facilities (ELOC), and selective digital asset activity." />
+
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    fontFamily: {
+                        sans: ["ui-sans-serif", "system-ui", "-apple-system", "Segoe UI", "Roboto", "Helvetica Neue", "Arial", "Noto Sans", "Liberation Sans", "sans-serif"]
+                    }
+                }
+            }
+        }
+    </script>
+
+    <style>
+        /* Elegant grid + glow background */
+        .bg-grid {
+            background-image:
+                radial-gradient(ellipse at top, rgba(16, 185, 129, 0.18), transparent 55%),
+                radial-gradient(ellipse at bottom, rgba(59, 130, 246, 0.14), transparent 55%),
+                linear-gradient(to bottom, rgba(2, 6, 23, 0.2), rgba(2, 6, 23, 1)),
+                linear-gradient(rgba(255, 255, 255, 0.06) 1px, transparent 1px),
+                linear-gradient(90deg, rgba(255, 255, 255, 0.06) 1px, transparent 1px);
+            background-size: auto, auto, auto, 48px 48px, 48px 48px;
+            background-position: center, center, center, top left, top left;
+        }
+
+        .glass {
+            backdrop-filter: blur(10px);
+            -webkit-backdrop-filter: blur(10px);
+        }
+    </style>
+</head>
+
+<body class="bg-slate-950 text-slate-100 antialiased">
+    <!-- Background -->
+    <div class="min-h-screen bg-grid">
+        <!-- Top announcement strip (optional) -->
+        <div class="border-b border-white/10">
+            <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 py-2 flex items-center justify-between">
+                <div class="text-xs text-slate-300">
+                    Private capital platform • Structured equity • ELOC • Select digital assets
+                </div>
+                <a href="#contact" class="text-xs font-semibold text-emerald-300 hover:text-emerald-200">
+                    Request an introduction →
+                </a>
+            </div>
+        </div>
+
+        <!-- Sticky Header -->
+        <header class="sticky top-0 z-50 border-b border-white/10 bg-slate-950/55 glass">
+            <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+                <div class="h-16 flex items-center justify-between">
+                    <!-- Brand -->
+                    <a href="#top" class="flex items-center gap-3">
+                        <!-- Replace with your SVG logo if you have one -->
+                        <div
+                            class="h-10 w-10 rounded-2xl bg-white/10 ring-1 ring-white/15 flex items-center justify-center">
+                            <span class="text-sm font-semibold tracking-wide">K</span>
+                        </div>
+                        <div class="leading-tight">
+                            <div class="font-semibold tracking-tight">Kasvora Capital</div>
+                            <div class="text-xs text-slate-400">Private Capital Platform</div>
+                        </div>
+                    </a>
+
+                    <!-- Desktop nav -->
+                    <nav class="hidden md:flex items-center gap-7 text-sm text-slate-200">
+                        <a class="hover:text-white" href="#mandate">Mandate</a>
+                        <a class="hover:text-white" href="#capabilities">Capabilities</a>
+                        <a class="hover:text-white" href="#process">Process</a>
+                        <a class="hover:text-white" href="#team">Team</a>
+                    </nav>
+
+                    <!-- CTAs -->
+                    <div class="hidden md:flex items-center gap-3">
+                        <a href="#contact"
+                            class="rounded-xl bg-white/10 px-4 py-2 text-sm font-semibold ring-1 ring-white/15 hover:bg-white/15">
+                            Contact
+                        </a>
+                        <a href="#contact"
+                            class="rounded-xl bg-emerald-400 text-slate-950 px-4 py-2 text-sm font-semibold hover:bg-emerald-300">
+                            Request Intro
+                        </a>
+                    </div>
+
+                    <!-- Mobile menu button -->
+                    <button id="menuBtn"
+                        class="md:hidden inline-flex items-center justify-center rounded-xl bg-white/10 p-2 ring-1 ring-white/15 hover:bg-white/15"
+                        aria-label="Open menu">
+                        <svg class="h-5 w-5" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <path d="M4 6h16M4 12h16M4 18h16" />
+                        </svg>
+                    </button>
+                </div>
+
+                <!-- Mobile menu -->
+                <div id="mobileMenu" class="md:hidden hidden pb-4">
+                    <div class="rounded-2xl bg-white/5 ring-1 ring-white/10 p-3 space-y-2 text-sm">
+                        <a class="block rounded-xl px-3 py-2 hover:bg-white/10" href="#mandate">Mandate</a>
+                        <a class="block rounded-xl px-3 py-2 hover:bg-white/10" href="#capabilities">Capabilities</a>
+                        <a class="block rounded-xl px-3 py-2 hover:bg-white/10" href="#process">Process</a>
+                        <a class="block rounded-xl px-3 py-2 hover:bg-white/10" href="#team">Team</a>
+                        <a class="block rounded-xl px-3 py-2 bg-emerald-400 text-slate-950 font-semibold"
+                            href="#contact">Request Intro</a>
+                    </div>
+                </div>
+            </div>
+        </header>
+
+        <!-- Hero -->
+        <main id="top">
+            <section class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 pt-14 pb-12 sm:pt-20 sm:pb-16">
+                <div class="grid lg:grid-cols-12 gap-10 items-start">
+                    <!-- Left hero copy -->
+                    <div class="lg:col-span-7">
+                        <div
+                            class="inline-flex items-center gap-2 rounded-full bg-white/5 ring-1 ring-white/10 px-3 py-1 text-xs text-slate-200">
+                            <span class="h-1.5 w-1.5 rounded-full bg-emerald-400"></span>
+                            Structured Equity • Committed Facilities (ELOC) • Select Digital Assets
+                        </div>
+
+                        <h1 class="mt-6 text-4xl sm:text-5xl font-semibold tracking-tight leading-tight">
+                            Institutional-grade structuring for private capital execution.
+                        </h1>
+
+                        <p class="mt-5 text-base sm:text-lg text-slate-200 leading-7 max-w-2xl">
+                            Kasvora Capital is a private capital platform engaged in structured equity transactions,
+                            including committed equity facilities (ELOC), and selective digital asset activity.
+                        </p>
+
+                        <div class="mt-8 flex flex-col sm:flex-row gap-3">
+                            <a href="#contact"
+                                class="rounded-2xl bg-emerald-400 text-slate-950 px-5 py-3 text-sm font-semibold hover:bg-emerald-300">
+                                Start a conversation
+                            </a>
+                            <a href="#mandate"
+                                class="rounded-2xl bg-white/10 ring-1 ring-white/15 px-5 py-3 text-sm font-semibold hover:bg-white/15">
+                                View mandate
+                            </a>
+                        </div>
+
+                        <!-- Trust / policy chips -->
+                        <div class="mt-9 flex flex-wrap gap-2 text-xs text-slate-300">
+                            <span class="rounded-full bg-white/5 ring-1 ring-white/10 px-3 py-2">Diligence-first</span>
+                            <span class="rounded-full bg-white/5 ring-1 ring-white/10 px-3 py-2">Structure
+                                clarity</span>
+                            <span class="rounded-full bg-white/5 ring-1 ring-white/10 px-3 py-2">Controlled
+                                deployment</span>
+                            <span class="rounded-full bg-white/5 ring-1 ring-white/10 px-3 py-2">Risk controls</span>
+                        </div>
+                    </div>
+
+                    <!-- Right hero panel -->
+                    <div class="lg:col-span-5">
+                        <div class="rounded-3xl bg-white/5 ring-1 ring-white/10 p-6 sm:p-7">
+                            <div class="flex items-center justify-between">
+                                <div class="text-sm font-semibold">Overview</div>
+                                <div class="text-xs text-slate-400">Snapshot</div>
+                            </div>
+
+                            <div class="mt-5 space-y-4">
+                                <div class="rounded-2xl bg-slate-950/40 ring-1 ring-white/10 p-5">
+                                    <div class="flex items-start gap-3">
+                                        <div
+                                            class="mt-0.5 h-9 w-9 rounded-2xl bg-emerald-400/15 ring-1 ring-emerald-400/25 flex items-center justify-center">
+                                            <svg class="h-4 w-4 text-emerald-200" viewBox="0 0 24 24" fill="none"
+                                                stroke="currentColor" stroke-width="2">
+                                                <path d="M12 3v18M3 12h18" />
+                                            </svg>
+                                        </div>
+                                        <div>
+                                            <div class="font-semibold">Structured Equity Transactions</div>
+                                            <div class="mt-1 text-sm text-slate-300 leading-6">
+                                                Governance-aware structures designed for clarity and execution.
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="rounded-2xl bg-slate-950/40 ring-1 ring-white/10 p-5">
+                                    <div class="flex items-start gap-3">
+                                        <div
+                                            class="mt-0.5 h-9 w-9 rounded-2xl bg-blue-400/15 ring-1 ring-blue-400/25 flex items-center justify-center">
+                                            <svg class="h-4 w-4 text-blue-200" viewBox="0 0 24 24" fill="none"
+                                                stroke="currentColor" stroke-width="2">
+                                                <path d="M4 19V5M4 5h16M20 5v14" />
+                                            </svg>
+                                        </div>
+                                        <div>
+                                            <div class="font-semibold">Committed Equity Facilities (ELOC)</div>
+                                            <div class="mt-1 text-sm text-slate-300 leading-6">
+                                                Flexible access to capital via committed equity facilities.
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="rounded-2xl bg-slate-950/40 ring-1 ring-white/10 p-5">
+                                    <div class="flex items-start gap-3">
+                                        <div
+                                            class="mt-0.5 h-9 w-9 rounded-2xl bg-fuchsia-400/15 ring-1 ring-fuchsia-400/25 flex items-center justify-center">
+                                            <svg class="h-4 w-4 text-fuchsia-200" viewBox="0 0 24 24" fill="none"
+                                                stroke="currentColor" stroke-width="2">
+                                                <path d="M12 2l4 8 8 2-6 6 2 8-8-4-8 4 2-8-6-6 8-2 4-8z" />
+                                            </svg>
+                                        </div>
+                                        <div>
+                                            <div class="font-semibold">Selective Digital Asset Activity</div>
+                                            <div class="mt-1 text-sm text-slate-300 leading-6">
+                                                Select exposure with sizing discipline and risk controls.
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="mt-5 text-xs text-slate-400 leading-6">
+                                Informational only. Not an offer, solicitation, or investment advice. Activities may be
+                                limited by jurisdiction and eligibility.
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Mandate -->
+            <section id="mandate" class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 py-14">
+                <div class="grid lg:grid-cols-12 gap-10 items-start">
+                    <div class="lg:col-span-5">
+                        <h2 class="text-2xl sm:text-3xl font-semibold tracking-tight">Mandate</h2>
+                        <p class="mt-3 text-slate-300 leading-7">
+                            A focused platform built around disciplined structuring and controlled deployment.
+                        </p>
+                    </div>
+
+                    <div class="lg:col-span-7">
+                        <div class="grid sm:grid-cols-2 gap-4">
+                            <div class="rounded-3xl bg-white/5 ring-1 ring-white/10 p-6">
+                                <div class="text-sm font-semibold">Structured Equity</div>
+                                <p class="mt-2 text-sm text-slate-300 leading-6">
+                                    Structured equity transactions with terms designed to align incentives and
+                                    execution.
+                                </p>
+                            </div>
+                            <div class="rounded-3xl bg-white/5 ring-1 ring-white/10 p-6">
+                                <div class="text-sm font-semibold">ELOC Facilities</div>
+                                <p class="mt-2 text-sm text-slate-300 leading-6">
+                                    Committed equity facilities (ELOC) supporting staged deployment and flexibility.
+                                </p>
+                            </div>
+                            <div class="rounded-3xl bg-white/5 ring-1 ring-white/10 p-6">
+                                <div class="text-sm font-semibold">Selective Digital Assets</div>
+                                <p class="mt-2 text-sm text-slate-300 leading-6">
+                                    Select activity only where risk controls, liquidity, and sizing discipline are
+                                    satisfied.
+                                </p>
+                            </div>
+                            <div class="rounded-3xl bg-white/5 ring-1 ring-white/10 p-6">
+                                <div class="text-sm font-semibold">Risk Controls</div>
+                                <p class="mt-2 text-sm text-slate-300 leading-6">
+                                    Clear constraints, monitoring, and governance sensitivity across exposures.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Capabilities -->
+            <section id="capabilities" class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 pb-14">
+                <div class="rounded-3xl bg-white/5 ring-1 ring-white/10 p-7 sm:p-10">
+                    <div class="flex flex-col sm:flex-row sm:items-end sm:justify-between gap-3">
+                        <div>
+                            <h2 class="text-2xl sm:text-3xl font-semibold tracking-tight">Capabilities</h2>
+                            <p class="mt-2 text-slate-300 leading-7 max-w-2xl">
+                                Execution is guided by structure quality, diligence depth, and practical risk
+                                management.
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="mt-8 grid md:grid-cols-3 gap-5">
+                        <div class="rounded-2xl bg-slate-950/40 ring-1 ring-white/10 p-6">
+                            <div class="text-sm font-semibold">Term Structuring</div>
+                            <p class="mt-2 text-sm text-slate-300 leading-6">
+                                Clear terms, governance awareness, and enforceability-focused documentation.
+                            </p>
+                        </div>
+
+                        <div class="rounded-2xl bg-slate-950/40 ring-1 ring-white/10 p-6">
+                            <div class="text-sm font-semibold">Facility Design</div>
+                            <p class="mt-2 text-sm text-slate-300 leading-6">
+                                Committed equity facility (ELOC) mechanics aligned to deployment, monitoring, and
+                                triggers.
+                            </p>
+                        </div>
+
+                        <div class="rounded-2xl bg-slate-950/40 ring-1 ring-white/10 p-6">
+                            <div class="text-sm font-semibold">Selective Exposure</div>
+                            <p class="mt-2 text-sm text-slate-300 leading-6">
+                                Digital asset activity evaluated through sizing discipline, liquidity, and risk
+                                controls.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Process -->
+            <section id="process" class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 pb-14">
+                <div class="grid lg:grid-cols-12 gap-10 items-start">
+                    <div class="lg:col-span-5">
+                        <h2 class="text-2xl sm:text-3xl font-semibold tracking-tight">Process</h2>
+                        <p class="mt-3 text-slate-300 leading-7">
+                            A simple, high-signal workflow for assessing fit and structuring next steps.
+                        </p>
+                    </div>
+
+                    <div class="lg:col-span-7">
+                        <ol class="space-y-4">
+                            <li class="rounded-3xl bg-white/5 ring-1 ring-white/10 p-6">
+                                <div class="flex items-start gap-4">
+                                    <div
+                                        class="h-9 w-9 rounded-2xl bg-white/10 ring-1 ring-white/15 flex items-center justify-center text-sm font-semibold">
+                                        1</div>
+                                    <div>
+                                        <div class="font-semibold">Initial fit</div>
+                                        <div class="mt-1 text-sm text-slate-300 leading-6">High-level overview:
+                                            structure, amount, timeline, constraints.</div>
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="rounded-3xl bg-white/5 ring-1 ring-white/10 p-6">
+                                <div class="flex items-start gap-4">
+                                    <div
+                                        class="h-9 w-9 rounded-2xl bg-white/10 ring-1 ring-white/15 flex items-center justify-center text-sm font-semibold">
+                                        2</div>
+                                    <div>
+                                        <div class="font-semibold">Diligence & structure</div>
+                                        <div class="mt-1 text-sm text-slate-300 leading-6">Governance, downside mapping,
+                                            and term architecture.</div>
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="rounded-3xl bg-white/5 ring-1 ring-white/10 p-6">
+                                <div class="flex items-start gap-4">
+                                    <div
+                                        class="h-9 w-9 rounded-2xl bg-white/10 ring-1 ring-white/15 flex items-center justify-center text-sm font-semibold">
+                                        3</div>
+                                    <div>
+                                        <div class="font-semibold">Execution & monitoring</div>
+                                        <div class="mt-1 text-sm text-slate-300 leading-6">Deployment, tracking, and
+                                            trigger-based oversight.</div>
+                                    </div>
+                                </div>
+                            </li>
+                        </ol>
+
+                        <div class="mt-6 text-xs text-slate-400 leading-6">
+                            Note: eligibility, jurisdiction, and compliance requirements may limit scope or
+                            availability.
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Team -->
+            <section id="team" class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 pb-14">
+                <div class="flex flex-col gap-2">
+                    <h2 class="text-2xl sm:text-3xl font-semibold tracking-tight">Team & network</h2>
+                    <p class="text-slate-300 leading-7 max-w-2xl">
+                        Directory of Kasvora’s team and extended network.
+                    </p>
+                </div>
+
+                <div class="mt-7 grid sm:grid-cols-2 lg:grid-cols-4 gap-4">
+                    <!-- If you want roles, add a <div class="text-xs text-slate-400">Role</div> under the name -->
+                    <div class="rounded-3xl bg-white/5 ring-1 ring-white/10 p-5">
+                        <div class="text-sm font-semibold">Mikhail Sidorin</div>
+                    </div>
+                    <div class="rounded-3xl bg-white/5 ring-1 ring-white/10 p-5">
+                        <div class="text-sm font-semibold">Irina Petrovna</div>
+                    </div>
+                    <div class="rounded-3xl bg-white/5 ring-1 ring-white/10 p-5">
+                        <div class="text-sm font-semibold">Svetlana Ivanova</div>
+                    </div>
+                    <div class="rounded-3xl bg-white/5 ring-1 ring-white/10 p-5">
+                        <div class="text-sm font-semibold">Yuri Bernikov</div>
+                    </div>
+                    <div class="rounded-3xl bg-white/5 ring-1 ring-white/10 p-5">
+                        <div class="text-sm font-semibold">Lucien Moreau</div>
+                    </div>
+                    <div class="rounded-3xl bg-white/5 ring-1 ring-white/10 p-5">
+                        <div class="text-sm font-semibold">Claire Montrose</div>
+                    </div>
+                    <div class="rounded-3xl bg-white/5 ring-1 ring-white/10 p-5">
+                        <div class="text-sm font-semibold">Sophie Delacroix</div>
+                    </div>
+                    <div class="rounded-3xl bg-white/5 ring-1 ring-white/10 p-5">
+                        <div class="text-sm font-semibold">Marc Leveaux</div>
+                    </div>
+                    <div class="rounded-3xl bg-white/5 ring-1 ring-white/10 p-5">
+                        <div class="text-sm font-semibold">Carlos Navarro</div>
+                    </div>
+                    <div class="rounded-3xl bg-white/5 ring-1 ring-white/10 p-5">
+                        <div class="text-sm font-semibold">Lucia Mendoza</div>
+                    </div>
+                    <div class="rounded-3xl bg-white/5 ring-1 ring-white/10 p-5">
+                        <div class="text-sm font-semibold">Thomas Caldwell</div>
+                    </div>
+                    <div class="rounded-3xl bg-white/5 ring-1 ring-white/10 p-5">
+                        <div class="text-sm font-semibold">Emily Harrison</div>
+                    </div>
+                    <div class="rounded-3xl bg-white/5 ring-1 ring-white/10 p-5">
+                        <div class="text-sm font-semibold">Victoria Ashcroft</div>
+                    </div>
+                    <div class="rounded-3xl bg-white/5 ring-1 ring-white/10 p-5">
+                        <div class="text-sm font-semibold">Laura Neumann</div>
+                    </div>
+                    <div class="rounded-3xl bg-white/5 ring-1 ring-white/10 p-5">
+                        <div class="text-sm font-semibold">Klara Hoffmann</div>
+                    </div>
+                    <div class="rounded-3xl bg-white/5 ring-1 ring-white/10 p-5">
+                        <div class="text-sm font-semibold">Hannah Weber</div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Contact -->
+            <section id="contact" class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 pb-16">
+                <div class="rounded-3xl bg-gradient-to-b from-white/10 to-white/5 ring-1 ring-white/10 p-7 sm:p-10">
+                    <div class="grid lg:grid-cols-12 gap-10 items-start">
+                        <div class="lg:col-span-6">
+                            <h2 class="text-2xl sm:text-3xl font-semibold tracking-tight">Contact</h2>
+                            <p class="mt-3 text-slate-200 leading-7">
+                                Send a brief overview of the transaction or facility request. If aligned, we’ll reply
+                                with next steps.
+                            </p>
+
+                            <div class="mt-6 rounded-2xl bg-slate-950/40 ring-1 ring-white/10 p-5">
+                                <div class="text-xs text-slate-400">Preferred detail to include</div>
+                                <ul class="mt-2 text-sm text-slate-300 leading-6 list-disc list-inside space-y-1">
+                                    <li>Capital amount and timeline</li>
+                                    <li>Desired structure (e.g., ELOC / equity)</li>
+                                    <li>Jurisdiction & constraints</li>
+                                </ul>
+                            </div>
+
+                            <p class="mt-6 text-xs text-slate-400 leading-6">
+                                This page is informational only. It does not constitute an offer, solicitation, or
+                                investment advice.
+                                Availability may vary by jurisdiction, eligibility, and compliance requirements.
+                            </p>
+                        </div>
+
+                        <div class="lg:col-span-6">
+                            <form class="space-y-3"
+                                onsubmit="event.preventDefault(); alert('Replace this alert with your form handler (Formspree/Resend/Vercel function).');">
+                                <div class="grid sm:grid-cols-2 gap-3">
+                                    <input
+                                        class="w-full rounded-2xl bg-slate-950/60 ring-1 ring-white/10 px-4 py-3 text-sm placeholder:text-slate-500 focus:outline-none focus:ring-2 focus:ring-emerald-400/60"
+                                        placeholder="Full name" required />
+                                    <input type="email"
+                                        class="w-full rounded-2xl bg-slate-950/60 ring-1 ring-white/10 px-4 py-3 text-sm placeholder:text-slate-500 focus:outline-none focus:ring-2 focus:ring-emerald-400/60"
+                                        placeholder="Email" required />
+                                </div>
+                                <input
+                                    class="w-full rounded-2xl bg-slate-950/60 ring-1 ring-white/10 px-4 py-3 text-sm placeholder:text-slate-500 focus:outline-none focus:ring-2 focus:ring-emerald-400/60"
+                                    placeholder="Company / Project" />
+                                <textarea rows="5"
+                                    class="w-full rounded-2xl bg-slate-950/60 ring-1 ring-white/10 px-4 py-3 text-sm placeholder:text-slate-500 focus:outline-none focus:ring-2 focus:ring-emerald-400/60"
+                                    placeholder="Message (amount, structure, timeline, jurisdiction)"
+                                    required></textarea>
+
+                                <button
+                                    class="w-full rounded-2xl bg-emerald-400 text-slate-950 px-5 py-3 text-sm font-semibold hover:bg-emerald-300"
+                                    type="submit">
+                                    Send inquiry
+                                </button>
+
+                                <!-- Optional direct email line -->
+                                <div class="text-xs text-slate-400">
+                                    Or email: <span class="text-slate-200 font-semibold">contact@kasvora.capital</span>
+                                    <!-- replace -->
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Footer -->
+            <footer class="border-t border-white/10">
+                <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 py-10 grid md:grid-cols-12 gap-6">
+                    <div class="md:col-span-6">
+                        <div class="flex items-center gap-3">
+                            <div
+                                class="h-9 w-9 rounded-2xl bg-white/10 ring-1 ring-white/15 flex items-center justify-center">
+                                <span class="text-sm font-semibold tracking-wide">K</span>
+                            </div>
+                            <div>
+                                <div class="font-semibold">Kasvora Capital</div>
+                                <div class="text-xs text-slate-400">Private Capital Platform</div>
+                            </div>
+                        </div>
+
+                        <p class="mt-4 text-xs text-slate-400 leading-6 max-w-xl">
+                            Disclosures: This website is for informational purposes only and does not constitute an
+                            offer to sell or a solicitation to buy
+                            any securities or financial instruments. Any transaction is subject to diligence,
+                            documentation, and compliance requirements.
+                        </p>
+                    </div>
+
+                    <div class="md:col-span-6 md:text-right">
+                        <div class="text-sm text-slate-300">© <span id="year"></span> Kasvora Capital. All rights
+                            reserved.</div>
+                        <div class="mt-2 text-xs text-slate-500">
+                            Structured equity • Committed equity facilities (ELOC) • Select digital asset activity
+                        </div>
+                    </div>
+                </div>
+            </footer>
+        </main>
+    </div>
+
+    <script>
+        // Mobile menu toggle
+        const btn = document.getElementById('menuBtn');
+        const menu = document.getElementById('mobileMenu');
+        btn?.addEventListener('click', () => menu.classList.toggle('hidden'));
+
+        // Current year
+        document.getElementById('year').textContent = new Date().getFullYear();
+    </script>
+</body>
+
+</html>
