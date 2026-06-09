@@ -1,0 +1,495 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Kasvora Capital — Strategic Holdings & Energy</title>
+    <meta name="description"
+        content="Kasvora Capital is a private investment and strategic holdings firm focused on public markets, energy, and control-oriented investments." />
+
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    fontFamily: {
+                        sans: ["ui-sans-serif", "system-ui", "-apple-system", "Segoe UI", "Roboto", "Helvetica Neue", "Arial", "Noto Sans", "Liberation Sans", "sans-serif"]
+                    }
+                }
+            }
+        }
+    </script>
+
+    <style>
+        /* Elegant grid + glow background */
+        .bg-grid {
+            background-image:
+                radial-gradient(ellipse at top, rgba(16, 185, 129, 0.14), transparent 55%),
+                radial-gradient(ellipse at bottom, rgba(59, 130, 246, 0.10), transparent 55%),
+                linear-gradient(to bottom, rgba(2, 6, 23, 0.2), rgba(2, 6, 23, 1)),
+                linear-gradient(rgba(255, 255, 255, 0.06) 1px, transparent 1px),
+                linear-gradient(90deg, rgba(255, 255, 255, 0.06) 1px, transparent 1px);
+            background-size: auto, auto, auto, 48px 48px, 48px 48px;
+            background-position: center, center, center, top left, top left;
+        }
+
+        .glass {
+            backdrop-filter: blur(10px);
+            -webkit-backdrop-filter: blur(10px);
+        }
+    </style>
+</head>
+
+<body class="bg-slate-950 text-slate-100 antialiased">
+    <!-- Background -->
+    <div class="min-h-screen bg-grid">
+        <!-- Top announcement strip (optional) -->
+        <div class="border-b border-white/10">
+            <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 py-2 flex items-center justify-between">
+                <div class="text-xs text-slate-300">
+                    Private investment firm • Public markets • Energy • Control investments
+                </div>
+                <a href="#contact" class="text-xs font-semibold text-emerald-300 hover:text-emerald-200">
+                    Contact Kasvora →
+                </a>
+            </div>
+        </div>
+
+        <!-- Sticky Header -->
+        <header class="sticky top-0 z-50 border-b border-white/10 bg-slate-950/55 glass">
+            <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+                <div class="h-16 flex items-center justify-between">
+                    <!-- Brand -->
+                    <a href="#top" class="flex items-center gap-3">
+                        <!-- Replace with your SVG logo if you have one -->
+                        <div
+                            class="h-10 w-10 rounded-2xl bg-white/10 ring-1 ring-white/15 flex items-center justify-center">
+                            <span class="text-sm font-semibold tracking-wide">K</span>
+                        </div>
+                        <div class="leading-tight">
+                            <div class="font-semibold tracking-tight">Kasvora Capital</div>
+                            <div class="text-xs text-slate-400">Strategic Holdings Firm</div>
+                        </div>
+                    </a>
+
+                    <!-- Desktop nav -->
+                    <nav class="hidden md:flex items-center gap-7 text-sm text-slate-200">
+                        <a class="hover:text-white" href="#overview">Overview</a>
+                        <a class="hover:text-white" href="#focus">Focus Areas</a>
+                        <a class="hover:text-white" href="#approach">Approach</a>
+                        <a class="hover:text-white" href="#contact">Contact</a>
+                    </nav>
+
+                    <!-- CTAs -->
+                    <div class="hidden md:flex items-center gap-3">
+                        <a href="#contact"
+                            class="rounded-xl bg-white/10 px-4 py-2 text-sm font-semibold ring-1 ring-white/15 hover:bg-white/15">
+                            Contact
+                        </a>
+                        <a href="#contact"
+                            class="rounded-xl bg-emerald-400 text-slate-950 px-4 py-2 text-sm font-semibold hover:bg-emerald-300">
+                            Send Inquiry
+                        </a>
+                    </div>
+
+                    <!-- Mobile menu button -->
+                    <button id="menuBtn"
+                        class="md:hidden inline-flex items-center justify-center rounded-xl bg-white/10 p-2 ring-1 ring-white/15 hover:bg-white/15"
+                        aria-label="Open menu">
+                        <svg class="h-5 w-5" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <path d="M4 6h16M4 12h16M4 18h16" />
+                        </svg>
+                    </button>
+                </div>
+
+                <!-- Mobile menu -->
+                <div id="mobileMenu" class="md:hidden hidden pb-4">
+                    <div class="rounded-2xl bg-white/5 ring-1 ring-white/10 p-3 space-y-2 text-sm">
+                        <a class="block rounded-xl px-3 py-2 hover:bg-white/10" href="#overview">Overview</a>
+                        <a class="block rounded-xl px-3 py-2 hover:bg-white/10" href="#focus">Focus Areas</a>
+                        <a class="block rounded-xl px-3 py-2 hover:bg-white/10" href="#approach">Approach</a>
+                        <a class="block rounded-xl px-3 py-2 bg-emerald-400 text-slate-950 font-semibold"
+                            href="#contact">Send Inquiry</a>
+                    </div>
+                </div>
+            </div>
+        </header>
+
+        <!-- Hero -->
+        <main id="top">
+            <section class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 pt-14 pb-12 sm:pt-20 sm:pb-16">
+                <div class="grid lg:grid-cols-12 gap-10 items-start">
+                    <!-- Left hero copy -->
+                    <div class="lg:col-span-7">
+                        <div
+                            class="inline-flex items-center gap-2 rounded-full bg-white/5 ring-1 ring-white/10 px-3 py-1 text-xs text-slate-200">
+                            <span class="h-1.5 w-1.5 rounded-full bg-emerald-400"></span>
+                            Public Markets • Energy • Control & Special Situations
+                        </div>
+
+                        <h1 class="mt-6 text-4xl sm:text-5xl font-semibold tracking-tight leading-tight">
+                            Private investment and strategic holdings, built for long-term value creation.
+                        </h1>
+
+                        <p class="mt-5 text-base sm:text-lg text-slate-200 leading-7 max-w-2xl">
+                            Kasvora Capital is a private investment and strategic holdings firm focused on public
+                            markets,
+                            energy, and control-oriented investments.
+                        </p>
+
+                        <div class="mt-8 flex flex-col sm:flex-row gap-3">
+                            <a href="#contact"
+                                class="rounded-2xl bg-emerald-400 text-slate-950 px-5 py-3 text-sm font-semibold hover:bg-emerald-300">
+                                Start a conversation
+                            </a>
+                            <a href="#focus"
+                                class="rounded-2xl bg-white/10 ring-1 ring-white/15 px-5 py-3 text-sm font-semibold hover:bg-white/15">
+                                View focus areas
+                            </a>
+                        </div>
+
+                        <!-- Trust / policy chips -->
+                        <div class="mt-9 flex flex-wrap gap-2 text-xs text-slate-300">
+                            <span class="rounded-full bg-white/5 ring-1 ring-white/10 px-3 py-2">Principal
+                                capital</span>
+                            <span
+                                class="rounded-full bg-white/5 ring-1 ring-white/10 px-3 py-2">Execution-oriented</span>
+                            <span class="rounded-full bg-white/5 ring-1 ring-white/10 px-3 py-2">Structure &
+                                discipline</span>
+                            <span class="rounded-full bg-white/5 ring-1 ring-white/10 px-3 py-2">Long-term focus</span>
+                        </div>
+                    </div>
+
+                    <!-- Right hero panel -->
+                    <div class="lg:col-span-5">
+                        <div class="rounded-3xl bg-white/5 ring-1 ring-white/10 p-6 sm:p-7">
+                            <div class="flex items-center justify-between">
+                                <div class="text-sm font-semibold">Snapshot</div>
+                                <div class="text-xs text-slate-400">Kasvora Capital</div>
+                            </div>
+
+                            <div class="mt-5 space-y-4">
+                                <div class="rounded-2xl bg-slate-950/40 ring-1 ring-white/10 p-5">
+                                    <div class="flex items-start gap-3">
+                                        <div
+                                            class="mt-0.5 h-9 w-9 rounded-2xl bg-emerald-400/15 ring-1 ring-emerald-400/25 flex items-center justify-center">
+                                            <svg class="h-4 w-4 text-emerald-200" viewBox="0 0 24 24" fill="none"
+                                                stroke="currentColor" stroke-width="2">
+                                                <path d="M12 3v18M3 12h18" />
+                                            </svg>
+                                        </div>
+                                        <div>
+                                            <div class="font-semibold">Strategic Holdings</div>
+                                            <div class="mt-1 text-sm text-slate-300 leading-6">
+                                                Active involvement alongside management and operating partners.
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="rounded-2xl bg-slate-950/40 ring-1 ring-white/10 p-5">
+                                    <div class="flex items-start gap-3">
+                                        <div
+                                            class="mt-0.5 h-9 w-9 rounded-2xl bg-blue-400/15 ring-1 ring-blue-400/25 flex items-center justify-center">
+                                            <svg class="h-4 w-4 text-blue-200" viewBox="0 0 24 24" fill="none"
+                                                stroke="currentColor" stroke-width="2">
+                                                <path d="M4 19V5M4 5h16M20 5v14" />
+                                            </svg>
+                                        </div>
+                                        <div>
+                                            <div class="font-semibold">Public & Private Investments</div>
+                                            <div class="mt-1 text-sm text-slate-300 leading-6">
+                                                Minority and control positions across select sectors.
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="rounded-2xl bg-slate-950/40 ring-1 ring-white/10 p-5">
+                                    <div class="flex items-start gap-3">
+                                        <div
+                                            class="mt-0.5 h-9 w-9 rounded-2xl bg-amber-400/15 ring-1 ring-amber-400/25 flex items-center justify-center">
+                                            <svg class="h-4 w-4 text-amber-200" viewBox="0 0 24 24" fill="none"
+                                                stroke="currentColor" stroke-width="2">
+                                                <path d="M12 1v22M5 6h14M7 12h10M9 18h6" />
+                                            </svg>
+                                        </div>
+                                        <div>
+                                            <div class="font-semibold">Energy Trading</div>
+                                            <div class="mt-1 text-sm text-slate-300 leading-6">
+                                                Specializing in energy trading and the development of industrial market
+                                                opportunities.
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="mt-5 text-xs text-slate-400 leading-6">
+                                Informational only. Not an offer, solicitation, or investment advice. Activities may be
+                                limited by jurisdiction and eligibility.
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Overview -->
+            <section id="overview" class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 py-14">
+                <div class="grid lg:grid-cols-12 gap-10 items-start">
+                    <div class="lg:col-span-5">
+                        <h2 class="text-2xl sm:text-3xl font-semibold tracking-tight">Overview</h2>
+                        <p class="mt-3 text-slate-300 leading-7">
+                            A private investment and strategic holdings firm focused on long-term value creation through
+                            capital, structure, and execution.
+                        </p>
+                    </div>
+
+                    <div class="lg:col-span-7">
+                        <div class="rounded-3xl bg-white/5 ring-1 ring-white/10 p-6 sm:p-7">
+                            <p class="text-sm text-slate-200 leading-7">
+                                The firm acquires, invests in, and operates businesses across sectors where capital,
+                                structure, and strategic execution
+                                drive long-term value. Kasvora’s activities include principal investments in public and
+                                private companies, structured
+                                capital solutions, investment banking, and energy trading, with a particular focus on
+                                strategic industrial
+                                opportunities.
+                            </p>
+                            <p class="mt-4 text-sm text-slate-200 leading-7">
+                                The firm pursues both minority and control positions and works actively alongside
+                                management teams, counterparties, and operating partners to execute complex transactions
+                                and long-term growth strategies.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Focus Areas -->
+            <section id="focus" class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 pb-14">
+                <div class="rounded-3xl bg-white/5 ring-1 ring-white/10 p-7 sm:p-10">
+                    <div class="flex flex-col sm:flex-row sm:items-end sm:justify-between gap-3">
+                        <div>
+                            <h2 class="text-2xl sm:text-3xl font-semibold tracking-tight">Focus Areas</h2>
+                            <p class="mt-2 text-slate-300 leading-7 max-w-2xl">
+                                Core activities across strategic holdings, capital solutions, and energy-related
+                                execution.
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="mt-8 grid md:grid-cols-3 gap-5">
+                        <div class="rounded-2xl bg-slate-950/40 ring-1 ring-white/10 p-6">
+                            <div class="text-sm font-semibold">Strategic Holdings</div>
+                            <p class="mt-2 text-sm text-slate-300 leading-6">
+                                Active ownership orientation, with a focus on execution and operational outcomes.
+                            </p>
+                        </div>
+
+                        <div class="rounded-2xl bg-slate-950/40 ring-1 ring-white/10 p-6">
+                            <div class="text-sm font-semibold">Public & Private Company Investments</div>
+                            <p class="mt-2 text-sm text-slate-300 leading-6">
+                                Principal investments across public markets and private companies, minority or control.
+                            </p>
+                        </div>
+
+                        <!-- <div class="rounded-2xl bg-slate-950/40 ring-1 ring-white/10 p-6">
+                            <div class="text-sm font-semibold">Investment Banking & Structured Finance</div>
+                            <p class="mt-2 text-sm text-slate-300 leading-6">
+                                Structured capital solutions and transaction execution support.
+                            </p>
+                        </div> -->
+
+                        <div class="rounded-2xl bg-slate-950/40 ring-1 ring-white/10 p-6">
+                            <div class="text-sm font-semibold">Energy Trading</div>
+                            <p class="mt-2 text-sm text-slate-300 leading-6">
+                                Specializing in energy trading and the development of industrial market opportunities.
+                            </p>
+                        </div>
+
+                        <div class="rounded-2xl bg-slate-950/40 ring-1 ring-white/10 p-6">
+                            <div class="text-sm font-semibold">Control & Special Situations</div>
+                            <p class="mt-2 text-sm text-slate-300 leading-6">
+                                Control-oriented investments, restructurings, and complex situations.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Approach -->
+            <section id="approach" class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 pb-14">
+                <div class="grid lg:grid-cols-12 gap-10 items-start">
+                    <div class="lg:col-span-5">
+                        <h2 class="text-2xl sm:text-3xl font-semibold tracking-tight">Approach</h2>
+                        <p class="mt-3 text-slate-300 leading-7">
+                            Hands-on partnership with management teams and counterparties to execute complex
+                            transactions.
+                        </p>
+                    </div>
+
+                    <div class="lg:col-span-7">
+                        <ol class="space-y-4">
+                            <li class="rounded-3xl bg-white/5 ring-1 ring-white/10 p-6">
+                                <div class="flex items-start gap-4">
+                                    <div
+                                        class="h-9 w-9 rounded-2xl bg-white/10 ring-1 ring-white/15 flex items-center justify-center text-sm font-semibold">
+                                        1</div>
+                                    <div>
+                                        <div class="font-semibold">Opportunity screening</div>
+                                        <div class="mt-1 text-sm text-slate-300 leading-6">
+                                            Define objectives, scope, constraints, and transaction pathway.
+                                        </div>
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="rounded-3xl bg-white/5 ring-1 ring-white/10 p-6">
+                                <div class="flex items-start gap-4">
+                                    <div
+                                        class="h-9 w-9 rounded-2xl bg-white/10 ring-1 ring-white/15 flex items-center justify-center text-sm font-semibold">
+                                        2</div>
+                                    <div>
+                                        <div class="font-semibold">Structure & execution</div>
+                                        <div class="mt-1 text-sm text-slate-300 leading-6">
+                                            Build capital/term structures and coordinate counterparties for execution.
+                                        </div>
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="rounded-3xl bg-white/5 ring-1 ring-white/10 p-6">
+                                <div class="flex items-start gap-4">
+                                    <div
+                                        class="h-9 w-9 rounded-2xl bg-white/10 ring-1 ring-white/15 flex items-center justify-center text-sm font-semibold">
+                                        3</div>
+                                    <div>
+                                        <div class="font-semibold">Ownership & growth</div>
+                                        <div class="mt-1 text-sm text-slate-300 leading-6">
+                                            Active involvement to support long-term growth strategies and operating
+                                            outcomes.
+                                        </div>
+                                    </div>
+                                </div>
+                            </li>
+                        </ol>
+
+                        <div class="mt-6 text-xs text-slate-400 leading-6">
+                            Note: eligibility, jurisdiction, and compliance requirements may limit scope or
+                            availability.
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Contact -->
+            <section id="contact" class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 pb-16">
+                <div class="rounded-3xl bg-gradient-to-b from-white/10 to-white/5 ring-1 ring-white/10 p-7 sm:p-10">
+                    <div class="grid lg:grid-cols-12 gap-10 items-start">
+                        <div class="lg:col-span-6">
+                            <h2 class="text-2xl sm:text-3xl font-semibold tracking-tight">Contact</h2>
+                            <p class="mt-3 text-slate-200 leading-7">
+                                Share a brief overview of the situation or opportunity. If aligned, we’ll respond with
+                                next steps.
+                            </p>
+
+                            <div class="mt-6 rounded-2xl bg-slate-950/40 ring-1 ring-white/10 p-5">
+                                <div class="text-xs text-slate-400">Helpful details to include</div>
+                                <ul class="mt-2 text-sm text-slate-300 leading-6 list-disc list-inside space-y-1">
+                                    <li>Sector (public markets / private / energy)</li>
+                                    <li>Capital amount, structure, and timeline</li>
+                                    <li>Jurisdiction & constraints</li>
+                                    <li>Control vs. minority preference</li>
+                                </ul>
+                            </div>
+
+                            <p class="mt-6 text-xs text-slate-400 leading-6">
+                                This page is informational only. It does not constitute an offer, solicitation, or
+                                investment advice.
+                                Availability may vary by jurisdiction, eligibility, and compliance requirements.
+                            </p>
+                        </div>
+
+                        <div class="lg:col-span-6">
+                            <form class="space-y-3"
+                                onsubmit="event.preventDefault(); alert('Replace this alert with your form handler (Formspree/Resend/Vercel function).');">
+                                <div class="grid sm:grid-cols-2 gap-3">
+                                    <input
+                                        class="w-full rounded-2xl bg-slate-950/60 ring-1 ring-white/10 px-4 py-3 text-sm placeholder:text-slate-500 focus:outline-none focus:ring-2 focus:ring-emerald-400/60"
+                                        placeholder="Full name" required />
+                                    <input type="email"
+                                        class="w-full rounded-2xl bg-slate-950/60 ring-1 ring-white/10 px-4 py-3 text-sm placeholder:text-slate-500 focus:outline-none focus:ring-2 focus:ring-emerald-400/60"
+                                        placeholder="Email" required />
+                                </div>
+                                <input
+                                    class="w-full rounded-2xl bg-slate-950/60 ring-1 ring-white/10 px-4 py-3 text-sm placeholder:text-slate-500 focus:outline-none focus:ring-2 focus:ring-emerald-400/60"
+                                    placeholder="Company / Opportunity" />
+                                <textarea rows="5"
+                                    class="w-full rounded-2xl bg-slate-950/60 ring-1 ring-white/10 px-4 py-3 text-sm placeholder:text-slate-500 focus:outline-none focus:ring-2 focus:ring-emerald-400/60"
+                                    placeholder="Message (sector, structure, timeline, jurisdiction)"
+                                    required></textarea>
+
+                                <button
+                                    class="w-full rounded-2xl bg-emerald-400 text-slate-950 px-5 py-3 text-sm font-semibold hover:bg-emerald-300"
+                                    type="submit">
+                                    Send inquiry
+                                </button>
+
+                                <!-- Optional direct email line -->
+                                <div class="text-xs text-slate-400">
+                                    Or email: <span class="text-slate-200 font-semibold">contact@kasvora.capital</span>
+                                    <!-- replace -->
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Footer -->
+            <footer class="border-t border-white/10">
+                <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 py-10 grid md:grid-cols-12 gap-6">
+                    <div class="md:col-span-7">
+                        <div class="flex items-center gap-3">
+                            <div
+                                class="h-9 w-9 rounded-2xl bg-white/10 ring-1 ring-white/15 flex items-center justify-center">
+                                <span class="text-sm font-semibold tracking-wide">K</span>
+                            </div>
+                            <div>
+                                <div class="font-semibold">Kasvora Capital</div>
+                                <div class="text-xs text-slate-400">Private Investment & Strategic Holdings</div>
+                            </div>
+                        </div>
+
+                        <p class="mt-4 text-xs text-slate-400 leading-6 max-w-xl">
+                            Disclosures: This website is for informational purposes only and does not constitute an
+                            offer to sell or a solicitation to buy
+                            any securities or financial instruments. Any transaction is subject to diligence,
+                            documentation, and compliance requirements.
+                        </p>
+                    </div>
+
+                    <div class="md:col-span-5 md:text-right">
+                        <div class="text-sm text-slate-300">© <span id="year"></span> Kasvora Capital. All rights
+                            reserved.</div>
+                        <div class="mt-2 text-xs text-slate-500">
+                            Strategic holdings • Public markets • Energy • Control & special situations
+                        </div>
+                    </div>
+                </div>
+            </footer>
+        </main>
+    </div>
+
+    <script>
+        // Mobile menu toggle
+        const btn = document.getElementById('menuBtn');
+        const menu = document.getElementById('mobileMenu');
+        btn?.addEventListener('click', () => menu.classList.toggle('hidden'));
+
+        // Current year
+        document.getElementById('year').textContent = new Date().getFullYear();
+    </script>
+</body>
+
+</html>

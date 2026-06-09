@@ -1,490 +1,265 @@
-<!doctype html>
-<html lang="en">
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
 
 <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>Kasvora Capital — Strategic Holdings & Energy</title>
-    <meta name="description"
-        content="Kasvora Capital is a private investment and strategic holdings firm focused on public markets, energy, and control-oriented investments." />
-
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Strattners® | Forward Capital. Permanent Vision.</title>
     <script src="https://cdn.tailwindcss.com"></script>
-    <script>
-        tailwind.config = {
-            theme: {
-                extend: {
-                    fontFamily: {
-                        sans: ["ui-sans-serif", "system-ui", "-apple-system", "Segoe UI", "Roboto", "Helvetica Neue", "Arial", "Noto Sans", "Liberation Sans", "sans-serif"]
-                    }
-                }
-            }
-        }
-    </script>
-
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@200;300;400;500;600&display=swap" rel="stylesheet">
+    <script src="https://unpkg.com/lucide@latest"></script>
     <style>
-        /* Elegant grid + glow background */
-        .bg-grid {
-            background-image:
-                radial-gradient(ellipse at top, rgba(16, 185, 129, 0.14), transparent 55%),
-                radial-gradient(ellipse at bottom, rgba(59, 130, 246, 0.10), transparent 55%),
-                linear-gradient(to bottom, rgba(2, 6, 23, 0.2), rgba(2, 6, 23, 1)),
-                linear-gradient(rgba(255, 255, 255, 0.06) 1px, transparent 1px),
-                linear-gradient(90deg, rgba(255, 255, 255, 0.06) 1px, transparent 1px);
-            background-size: auto, auto, auto, 48px 48px, 48px 48px;
-            background-position: center, center, center, top left, top left;
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: #0B0B0C;
         }
 
-        .glass {
-            backdrop-filter: blur(10px);
-            -webkit-backdrop-filter: blur(10px);
+        .text-glow {
+            text-shadow: 0 0 40px rgba(212, 175, 55, 0.2);
         }
     </style>
 </head>
 
-<body class="bg-slate-950 text-slate-100 antialiased">
-    <!-- Background -->
-    <div class="min-h-screen bg-grid">
-        <!-- Top announcement strip (optional) -->
-        <div class="border-b border-white/10">
-            <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 py-2 flex items-center justify-between">
-                <div class="text-xs text-slate-300">
-                    Private investment firm • Public markets • Energy • Control investments
-                </div>
-                <a href="#contact" class="text-xs font-semibold text-emerald-300 hover:text-emerald-200">
-                    Contact Kasvora →
+<body class="text-slate-300 antialiased selection:bg-amber-500/30 selection:text-white">
+
+    <div
+        class="w-full bg-[#070708] border-b border-zinc-800/60 py-2.5 px-6 md:px-16 text-xs flex flex-wrap justify-between items-center text-zinc-400 font-light gap-2">
+        <div class="flex items-center gap-6">
+            <span class="flex items-center gap-1.5"><i data-lucide="phone" class="w-3.5 h-3.5 text-zinc-500"></i> +44
+                (20) 8720 7361</span>
+            <span class="flex items-center gap-1.5"><i data-lucide="phone" class="w-3.5 h-3.5 text-zinc-500"></i> +971
+                (40) 427 2300</span>
+            <span class="flex items-center gap-1.5"><i data-lucide="mail" class="w-3.5 h-3.5 text-zinc-500"></i>
+                info@strattners.com</span>
+        </div>
+        <div class="flex items-center gap-4">
+            <a href="#" class="hover:text-amber-500 transition-colors">EN</a>
+            <span class="text-zinc-700">|</span>
+            <a href="#" class="hover:text-amber-500 transition-colors">DE</a>
+            <span class="text-zinc-700">|</span>
+            <a href="#" class="hover:text-amber-500 transition-colors">FR</a>
+        </div>
+    </div>
+
+    <header
+        class="sticky top-0 z-50 bg-[#0B0B0C]/80 backdrop-blur-md border-b border-zinc-900 px-6 md:px-16 py-5 flex justify-between items-center">
+        <a href="#" class="flex items-center gap-3 group">
+            <div class="relative">
+                <i data-lucide="key-round"
+                    class="w-6 h-6 text-amber-500/90 transform rotate-45 transition-transform group-hover:scale-105"></i>
+                <i data-lucide="key-round"
+                    class="w-6 h-6 text-amber-600/70 absolute top-0 left-1.5 transform -rotate-45 transition-transform group-hover:scale-105"></i>
+            </div>
+            <span class="text-xl font-light tracking-[0.25em] text-white uppercase ml-2">Strattners<span
+                    class="text-xs text-amber-500 align-super">®</span></span>
+        </a>
+
+        <nav class="hidden md:flex items-center gap-10 text-sm font-light tracking-wide">
+            <a href="#hero" class="text-white hover:text-amber-400 transition-colors">Home</a>
+            <a href="#expertise" class="text-zinc-400 hover:text-white transition-colors">Our Expertise</a>
+            <a href="#legacy" class="text-zinc-400 hover:text-white transition-colors">Our Story</a>
+            <a href="#contact"
+                class="px-5 py-2 border border-zinc-700 hover:border-amber-500/50 hover:text-white rounded-none transition-all text-xs tracking-widest uppercase">Institutional
+                Access</a>
+        </nav>
+    </header>
+
+    <section id="hero"
+        class="relative min-h-[85vh] flex flex-col justify-center px-6 md:px-16 lg:px-24 py-20 overflow-hidden border-b border-zinc-900">
+        <div
+            class="absolute top-1/4 right-[-10%] w-[600px] h-[600px] bg-amber-500/[0.03] rounded-full blur-[130px] pointer-events-none">
+        </div>
+        <div
+            class="absolute bottom-0 left-[-5%] w-[400px] h-[400px] bg-zinc-500/[0.02] rounded-full blur-[100px] pointer-events-none">
+        </div>
+
+        <div class="max-w-4xl z-10">
+            <div
+                class="inline-flex items-center gap-2 px-3 py-1 bg-zinc-900/60 border border-zinc-800 rounded-full mb-6 text-xs uppercase tracking-[0.2em] text-amber-500/90">
+                <span class="w-1.5 h-1.5 bg-amber-500 rounded-full animate-pulse"></span>
+                Global Holding Framework
+            </div>
+            <h1 class="text-4xl sm:text-6xl lg:text-7xl font-light tracking-tight text-white leading-[1.1] mb-6">
+                Forward Capital. <br />
+                <span
+                    class="font-normal text-transparent bg-clip-text bg-gradient-to-r from-zinc-400 via-zinc-200 to-zinc-500">Permanent
+                    Vision.</span>
+            </h1>
+            <p class="text-base sm:text-lg md:text-xl text-zinc-400 max-w-2xl font-light leading-relaxed mb-10">
+                Deploying institutional liquidity and permanent scale across strategic markets, alternative credit
+                landscapes, and high-conviction corporate private equity ecosystems.
+            </p>
+            <div class="flex flex-wrap gap-4">
+                <a href="#expertise"
+                    class="px-7 py-4 bg-white text-black font-medium text-xs tracking-widest uppercase hover:bg-zinc-200 transition-all flex items-center gap-2 shadow-lg shadow-white/5">
+                    Explore Expertise <i data-lucide="arrow-right" class="w-4 h-4"></i>
+                </a>
+                <a href="#contact"
+                    class="px-7 py-4 border border-zinc-700 text-white font-medium text-xs tracking-widest uppercase hover:border-zinc-400 transition-all">
+                    Initiate Engagement
                 </a>
             </div>
         </div>
+    </section>
 
-        <!-- Sticky Header -->
-        <header class="sticky top-0 z-50 border-b border-white/10 bg-slate-950/55 glass">
-            <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
-                <div class="h-16 flex items-center justify-between">
-                    <!-- Brand -->
-                    <a href="#top" class="flex items-center gap-3">
-                        <!-- Replace with your SVG logo if you have one -->
+    <section id="expertise" class="px-6 md:px-16 lg:px-24 py-24 bg-[#0E0E10] relative">
+        <div class="max-w-7xl mx-auto">
+            <div class="mb-16">
+                <p class="text-xs uppercase tracking-[0.3em] text-amber-500 font-semibold mb-2">Capabilities</p>
+                <h2 class="text-3xl md:text-4xl font-light text-white tracking-tight">Structured Deployment Matrix</h2>
+            </div>
+
+            <div class="grid grid-cols-1 lg:grid-cols-3 gap-6">
+                <div
+                    class="bg-[#121215] border border-zinc-800/80 p-8 flex flex-col justify-between group hover:border-zinc-700 transition-all hover:-translate-y-1">
+                    <div>
                         <div
-                            class="h-10 w-10 rounded-2xl bg-white/10 ring-1 ring-white/15 flex items-center justify-center">
-                            <span class="text-sm font-semibold tracking-wide">K</span>
+                            class="w-10 h-10 bg-zinc-900 border border-zinc-800 flex items-center justify-center mb-8 group-hover:border-amber-500/30 transition-colors">
+                            <i data-lucide="layers" class="w-4 h-4 text-amber-500"></i>
                         </div>
-                        <div class="leading-tight">
-                            <div class="font-semibold tracking-tight">Kasvora Capital</div>
-                            <div class="text-xs text-slate-400">Strategic Holdings Firm</div>
-                        </div>
-                    </a>
-
-                    <!-- Desktop nav -->
-                    <nav class="hidden md:flex items-center gap-7 text-sm text-slate-200">
-                        <a class="hover:text-white" href="#overview">Overview</a>
-                        <a class="hover:text-white" href="#focus">Focus Areas</a>
-                        <a class="hover:text-white" href="#approach">Approach</a>
-                        <a class="hover:text-white" href="#contact">Contact</a>
-                    </nav>
-
-                    <!-- CTAs -->
-                    <div class="hidden md:flex items-center gap-3">
-                        <a href="#contact"
-                            class="rounded-xl bg-white/10 px-4 py-2 text-sm font-semibold ring-1 ring-white/15 hover:bg-white/15">
-                            Contact
-                        </a>
-                        <a href="#contact"
-                            class="rounded-xl bg-emerald-400 text-slate-950 px-4 py-2 text-sm font-semibold hover:bg-emerald-300">
-                            Send Inquiry
-                        </a>
+                        <h3 class="text-xl font-normal text-white mb-4">Private Equity</h3>
+                        <p class="text-zinc-400 font-light text-sm leading-relaxed">
+                            Principal investments focused strictly on long-term corporate asset control, absolute
+                            capital preservation, and disciplined institutional value creation models.
+                        </p>
                     </div>
-
-                    <!-- Mobile menu button -->
-                    <button id="menuBtn"
-                        class="md:hidden inline-flex items-center justify-center rounded-xl bg-white/10 p-2 ring-1 ring-white/15 hover:bg-white/15"
-                        aria-label="Open menu">
-                        <svg class="h-5 w-5" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                            <path d="M4 6h16M4 12h16M4 18h16" />
-                        </svg>
-                    </button>
+                    <div
+                        class="mt-8 pt-4 border-t border-zinc-900 flex items-center justify-between text-xs tracking-wider text-zinc-500 uppercase group-hover:text-amber-500 transition-colors">
+                        <span>Corporate Transactions</span>
+                        <i data-lucide="chevron-right"
+                            class="w-4 h-4 transform group-hover:translate-x-1 transition-transform"></i>
+                    </div>
                 </div>
 
-                <!-- Mobile menu -->
-                <div id="mobileMenu" class="md:hidden hidden pb-4">
-                    <div class="rounded-2xl bg-white/5 ring-1 ring-white/10 p-3 space-y-2 text-sm">
-                        <a class="block rounded-xl px-3 py-2 hover:bg-white/10" href="#overview">Overview</a>
-                        <a class="block rounded-xl px-3 py-2 hover:bg-white/10" href="#focus">Focus Areas</a>
-                        <a class="block rounded-xl px-3 py-2 hover:bg-white/10" href="#approach">Approach</a>
-                        <a class="block rounded-xl px-3 py-2 bg-emerald-400 text-slate-950 font-semibold"
-                            href="#contact">Send Inquiry</a>
+                <div
+                    class="bg-[#121215] border border-zinc-800/80 p-8 flex flex-col justify-between group hover:border-zinc-700 transition-all hover:-translate-y-1">
+                    <div>
+                        <div
+                            class="w-10 h-10 bg-zinc-900 border border-zinc-800 flex items-center justify-center mb-8 group-hover:border-amber-500/30 transition-colors">
+                            <i data-lucide="trending-up" class="w-4 h-4 text-amber-500"></i>
+                        </div>
+                        <h3 class="text-xl font-normal text-white mb-4">Alternative Credit</h3>
+                        <p class="text-zinc-400 font-light text-sm leading-relaxed">
+                            Bespoke alternative capital structures, tactical asset-backed financing, structured
+                            liquidity bridges, and tailored credit portfolio engineering.
+                        </p>
+                    </div>
+                    <div
+                        class="mt-8 pt-4 border-t border-zinc-900 flex items-center justify-between text-xs tracking-wider text-zinc-500 uppercase group-hover:text-amber-500 transition-colors">
+                        <span>Tactical Allocation</span>
+                        <i data-lucide="chevron-right"
+                            class="w-4 h-4 transform group-hover:translate-x-1 transition-transform"></i>
+                    </div>
+                </div>
+
+                <div
+                    class="bg-[#121215] border border-zinc-800/80 p-8 flex flex-col justify-between group hover:border-zinc-700 transition-all hover:-translate-y-1">
+                    <div>
+                        <div
+                            class="w-10 h-10 bg-zinc-900 border border-zinc-800 flex items-center justify-center mb-8 group-hover:border-amber-500/30 transition-colors">
+                            <i data-lucide="shield-check" class="w-4 h-4 text-amber-500"></i>
+                        </div>
+                        <h3 class="text-xl font-normal text-white mb-4">Permanent Capital</h3>
+                        <p class="text-zinc-400 font-light text-sm leading-relaxed">
+                            An asset allocation architecture built for intentional multi-market flexibility, structural
+                            balance-sheet insulation, and insulated market longevity.
+                        </p>
+                    </div>
+                    <div
+                        class="mt-8 pt-4 border-t border-zinc-900 flex items-center justify-between text-xs tracking-wider text-zinc-500 uppercase group-hover:text-amber-500 transition-colors">
+                        <span>Balance Sheet Strength</span>
+                        <i data-lucide="chevron-right"
+                            class="w-4 h-4 transform group-hover:translate-x-1 transition-transform"></i>
                     </div>
                 </div>
             </div>
-        </header>
+        </div>
+    </section>
 
-        <!-- Hero -->
-        <main id="top">
-            <section class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 pt-14 pb-12 sm:pt-20 sm:pb-16">
-                <div class="grid lg:grid-cols-12 gap-10 items-start">
-                    <!-- Left hero copy -->
-                    <div class="lg:col-span-7">
-                        <div
-                            class="inline-flex items-center gap-2 rounded-full bg-white/5 ring-1 ring-white/10 px-3 py-1 text-xs text-slate-200">
-                            <span class="h-1.5 w-1.5 rounded-full bg-emerald-400"></span>
-                            Public Markets • Energy • Control & Special Situations
-                        </div>
+    <section id="legacy" class="px-6 md:px-16 lg:px-24 py-24 border-b border-zinc-900 relative">
+        <div class="max-w-5xl mx-auto grid grid-cols-1 md:grid-cols-5 gap-12 items-center">
 
-                        <h1 class="mt-6 text-4xl sm:text-5xl font-semibold tracking-tight leading-tight">
-                            Private investment and strategic holdings, built for long-term value creation.
-                        </h1>
-
-                        <p class="mt-5 text-base sm:text-lg text-slate-200 leading-7 max-w-2xl">
-                            Kasvora Capital is a private investment and strategic holdings firm focused on public
-                            markets,
-                            energy, and control-oriented investments.
-                        </p>
-
-                        <div class="mt-8 flex flex-col sm:flex-row gap-3">
-                            <a href="#contact"
-                                class="rounded-2xl bg-emerald-400 text-slate-950 px-5 py-3 text-sm font-semibold hover:bg-emerald-300">
-                                Start a conversation
-                            </a>
-                            <a href="#focus"
-                                class="rounded-2xl bg-white/10 ring-1 ring-white/15 px-5 py-3 text-sm font-semibold hover:bg-white/15">
-                                View focus areas
-                            </a>
-                        </div>
-
-                        <!-- Trust / policy chips -->
-                        <div class="mt-9 flex flex-wrap gap-2 text-xs text-slate-300">
-                            <span class="rounded-full bg-white/5 ring-1 ring-white/10 px-3 py-2">Principal
-                                capital</span>
-                            <span
-                                class="rounded-full bg-white/5 ring-1 ring-white/10 px-3 py-2">Execution-oriented</span>
-                            <span class="rounded-full bg-white/5 ring-1 ring-white/10 px-3 py-2">Structure &
-                                discipline</span>
-                            <span class="rounded-full bg-white/5 ring-1 ring-white/10 px-3 py-2">Long-term focus</span>
-                        </div>
-                    </div>
-
-                    <!-- Right hero panel -->
-                    <div class="lg:col-span-5">
-                        <div class="rounded-3xl bg-white/5 ring-1 ring-white/10 p-6 sm:p-7">
-                            <div class="flex items-center justify-between">
-                                <div class="text-sm font-semibold">Snapshot</div>
-                                <div class="text-xs text-slate-400">Kasvora Capital</div>
-                            </div>
-
-                            <div class="mt-5 space-y-4">
-                                <div class="rounded-2xl bg-slate-950/40 ring-1 ring-white/10 p-5">
-                                    <div class="flex items-start gap-3">
-                                        <div
-                                            class="mt-0.5 h-9 w-9 rounded-2xl bg-emerald-400/15 ring-1 ring-emerald-400/25 flex items-center justify-center">
-                                            <svg class="h-4 w-4 text-emerald-200" viewBox="0 0 24 24" fill="none"
-                                                stroke="currentColor" stroke-width="2">
-                                                <path d="M12 3v18M3 12h18" />
-                                            </svg>
-                                        </div>
-                                        <div>
-                                            <div class="font-semibold">Strategic Holdings</div>
-                                            <div class="mt-1 text-sm text-slate-300 leading-6">
-                                                Active involvement alongside management and operating partners.
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-
-                                <div class="rounded-2xl bg-slate-950/40 ring-1 ring-white/10 p-5">
-                                    <div class="flex items-start gap-3">
-                                        <div
-                                            class="mt-0.5 h-9 w-9 rounded-2xl bg-blue-400/15 ring-1 ring-blue-400/25 flex items-center justify-center">
-                                            <svg class="h-4 w-4 text-blue-200" viewBox="0 0 24 24" fill="none"
-                                                stroke="currentColor" stroke-width="2">
-                                                <path d="M4 19V5M4 5h16M20 5v14" />
-                                            </svg>
-                                        </div>
-                                        <div>
-                                            <div class="font-semibold">Public & Private Investments</div>
-                                            <div class="mt-1 text-sm text-slate-300 leading-6">
-                                                Minority and control positions across select sectors.
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-
-                                <div class="rounded-2xl bg-slate-950/40 ring-1 ring-white/10 p-5">
-                                    <div class="flex items-start gap-3">
-                                        <div
-                                            class="mt-0.5 h-9 w-9 rounded-2xl bg-amber-400/15 ring-1 ring-amber-400/25 flex items-center justify-center">
-                                            <svg class="h-4 w-4 text-amber-200" viewBox="0 0 24 24" fill="none"
-                                                stroke="currentColor" stroke-width="2">
-                                                <path d="M12 1v22M5 6h14M7 12h10M9 18h6" />
-                                            </svg>
-                                        </div>
-                                        <div>
-                                            <div class="font-semibold">Energy Trading</div>
-                                            <div class="mt-1 text-sm text-slate-300 leading-6">
-                                                Specializing in energy trading and the development of industrial market opportunities.
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-
-                            <div class="mt-5 text-xs text-slate-400 leading-6">
-                                Informational only. Not an offer, solicitation, or investment advice. Activities may be
-                                limited by jurisdiction and eligibility.
-                            </div>
-                        </div>
-                    </div>
+            <div class="md:col-span-2">
+                <p class="text-xs uppercase tracking-[0.3em] text-zinc-500 font-semibold mb-2">Our Origins</p>
+                <h2 class="text-3xl font-light text-white tracking-tight leading-tight mb-4">
+                    Anchored Stability. Modern Architecture.
+                </h2>
+                <div class="text-5xl font-extralight text-zinc-700 tracking-widest mt-6 border-l border-zinc-800 pl-4">
+                    EST. <span class="text-amber-500/40">1645</span>
                 </div>
-            </section>
+            </div>
 
-            <!-- Overview -->
-            <section id="overview" class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 py-14">
-                <div class="grid lg:grid-cols-12 gap-10 items-start">
-                    <div class="lg:col-span-5">
-                        <h2 class="text-2xl sm:text-3xl font-semibold tracking-tight">Overview</h2>
-                        <p class="mt-3 text-slate-300 leading-7">
-                            A private investment and strategic holdings firm focused on long-term value creation through
-                            capital, structure, and execution.
-                        </p>
-                    </div>
+            <div class="md:col-span-3 text-zinc-400 font-light space-y-6 text-sm sm:text-base leading-relaxed">
+                <p>
+                    Strattners operating parameters are defined and shaped by a long-term architecture to modern capital
+                    deployment. While our deep structural traditions track roots centuries deep, our execution
+                    capabilities operate with precision across modern multi-jurisdictional liquidity corridors.
+                </p>
+                <p>
+                    We operate with supreme absolute discretion across selected international markets and strategic
+                    special situations where patience, balance-sheet speed, and counterparty alignment are required to
+                    safeguard long-term value generation.
+                </p>
+            </div>
+        </div>
+    </section>
 
-                    <div class="lg:col-span-7">
-                        <div class="rounded-3xl bg-white/5 ring-1 ring-white/10 p-6 sm:p-7">
-                            <p class="text-sm text-slate-200 leading-7">
-                            The firm acquires, invests in, and operates businesses across sectors where capital, structure, and strategic execution
-                            drive long-term value. Kasvora’s activities include principal investments in public and private companies, structured
-                            capital solutions, investment banking, and energy trading, with a particular focus on strategic industrial
-                            opportunities.
-                            </p>
-                            <p class="mt-4 text-sm text-slate-200 leading-7">
-                                The firm pursues both minority and control positions and works actively alongside
-                                management teams, counterparties, and operating partners to execute complex transactions
-                                and long-term growth strategies.
-                            </p>
-                        </div>
-                    </div>
+    <section id="contact" class="px-6 md:px-16 lg:px-24 py-24 bg-[#070708] text-center relative">
+        <div class="max-w-2xl mx-auto">
+            <i data-lucide="globe" class="w-8 h-8 text-zinc-700 mx-auto mb-6"></i>
+            <h2 class="text-3xl font-light text-white tracking-tight mb-4">Institutional Inquiries</h2>
+            <p class="text-zinc-500 font-light text-sm max-w-md mx-auto mb-10">
+                Access to transaction records, fund portfolios, and strategic allocation desks is reserved exclusively
+                for vetted partners and qualified allocators.
+            </p>
+            <a href="mailto:info@strattners.com"
+                class="inline-flex items-center gap-3 px-8 py-4 bg-zinc-900 border border-zinc-800 text-white text-xs tracking-widest uppercase hover:bg-zinc-800 hover:border-zinc-700 transition-all font-medium">
+                <i data-lucide="mail" class="w-4 h-4 text-amber-500"></i> Open Gateway Desk
+            </a>
+        </div>
+    </section>
+
+    <footer class="bg-[#050506] border-t border-zinc-950 px-6 md:px-16 py-16 text-xs text-zinc-500 font-light">
+        <div class="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-4 gap-12 md:gap-6 mb-12">
+            <div class="md:col-span-2 space-y-4">
+                <div class="flex items-center gap-2">
+                    <span class="text-sm font-medium tracking-widest text-white uppercase">STRATTNERS<span
+                            class="text-[10px] text-amber-500">®</span></span>
                 </div>
-            </section>
+                <p class="max-w-xs text-zinc-600 leading-relaxed">
+                    Privately held global investment framework and permanent balance-sheet allocator executing
+                    institutional alternative-market transactions.
+                </p>
+            </div>
+            <div>
+                <h4 class="text-zinc-300 font-normal tracking-wider mb-4 uppercase text-[11px]">Regional Hubs</h4>
+                <ul class="space-y-2 text-zinc-600">
+                    <li>London Execution Desk</li>
+                    <li>Dubai Investment Office</li>
+                    <li>European Gateway Routing</li>
+                </ul>
+            </div>
+            <div>
+                <h4 class="text-zinc-300 font-normal tracking-wider mb-4 uppercase text-[11px]">Disclosures</h4>
+                <ul class="space-y-2 text-zinc-600">
+                    <li><a href="#" class="hover:text-zinc-400 transition-colors">Regulatory Framework</a></li>
+                    <li><a href="#" class="hover:text-zinc-400 transition-colors">Privacy Charter</a></li>
+                    <li><a href="#" class="hover:text-zinc-400 transition-colors">Terms of Engagement</a></li>
+                </ul>
+            </div>
+        </div>
 
-            <!-- Focus Areas -->
-            <section id="focus" class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 pb-14">
-                <div class="rounded-3xl bg-white/5 ring-1 ring-white/10 p-7 sm:p-10">
-                    <div class="flex flex-col sm:flex-row sm:items-end sm:justify-between gap-3">
-                        <div>
-                            <h2 class="text-2xl sm:text-3xl font-semibold tracking-tight">Focus Areas</h2>
-                            <p class="mt-2 text-slate-300 leading-7 max-w-2xl">
-                                Core activities across strategic holdings, capital solutions, and energy-related
-                                execution.
-                            </p>
-                        </div>
-                    </div>
-
-                    <div class="mt-8 grid md:grid-cols-3 gap-5">
-                        <div class="rounded-2xl bg-slate-950/40 ring-1 ring-white/10 p-6">
-                            <div class="text-sm font-semibold">Strategic Holdings</div>
-                            <p class="mt-2 text-sm text-slate-300 leading-6">
-                                Active ownership orientation, with a focus on execution and operational outcomes.
-                            </p>
-                        </div>
-
-                        <div class="rounded-2xl bg-slate-950/40 ring-1 ring-white/10 p-6">
-                            <div class="text-sm font-semibold">Public & Private Company Investments</div>
-                            <p class="mt-2 text-sm text-slate-300 leading-6">
-                                Principal investments across public markets and private companies, minority or control.
-                            </p>
-                        </div>
-
-                        <!-- <div class="rounded-2xl bg-slate-950/40 ring-1 ring-white/10 p-6">
-                            <div class="text-sm font-semibold">Investment Banking & Structured Finance</div>
-                            <p class="mt-2 text-sm text-slate-300 leading-6">
-                                Structured capital solutions and transaction execution support.
-                            </p>
-                        </div> -->
-
-                        <div class="rounded-2xl bg-slate-950/40 ring-1 ring-white/10 p-6">
-                            <div class="text-sm font-semibold">Energy Trading</div>
-                            <p class="mt-2 text-sm text-slate-300 leading-6">
-                                Specializing in energy trading and the development of industrial market opportunities.
-                            </p>
-                        </div>
-
-                        <div class="rounded-2xl bg-slate-950/40 ring-1 ring-white/10 p-6">
-                            <div class="text-sm font-semibold">Control & Special Situations</div>
-                            <p class="mt-2 text-sm text-slate-300 leading-6">
-                                Control-oriented investments, restructurings, and complex situations.
-                            </p>
-                        </div>
-                    </div>
-                </div>
-            </section>
-
-            <!-- Approach -->
-            <section id="approach" class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 pb-14">
-                <div class="grid lg:grid-cols-12 gap-10 items-start">
-                    <div class="lg:col-span-5">
-                        <h2 class="text-2xl sm:text-3xl font-semibold tracking-tight">Approach</h2>
-                        <p class="mt-3 text-slate-300 leading-7">
-                            Hands-on partnership with management teams and counterparties to execute complex
-                            transactions.
-                        </p>
-                    </div>
-
-                    <div class="lg:col-span-7">
-                        <ol class="space-y-4">
-                            <li class="rounded-3xl bg-white/5 ring-1 ring-white/10 p-6">
-                                <div class="flex items-start gap-4">
-                                    <div
-                                        class="h-9 w-9 rounded-2xl bg-white/10 ring-1 ring-white/15 flex items-center justify-center text-sm font-semibold">
-                                        1</div>
-                                    <div>
-                                        <div class="font-semibold">Opportunity screening</div>
-                                        <div class="mt-1 text-sm text-slate-300 leading-6">
-                                            Define objectives, scope, constraints, and transaction pathway.
-                                        </div>
-                                    </div>
-                                </div>
-                            </li>
-                            <li class="rounded-3xl bg-white/5 ring-1 ring-white/10 p-6">
-                                <div class="flex items-start gap-4">
-                                    <div
-                                        class="h-9 w-9 rounded-2xl bg-white/10 ring-1 ring-white/15 flex items-center justify-center text-sm font-semibold">
-                                        2</div>
-                                    <div>
-                                        <div class="font-semibold">Structure & execution</div>
-                                        <div class="mt-1 text-sm text-slate-300 leading-6">
-                                            Build capital/term structures and coordinate counterparties for execution.
-                                        </div>
-                                    </div>
-                                </div>
-                            </li>
-                            <li class="rounded-3xl bg-white/5 ring-1 ring-white/10 p-6">
-                                <div class="flex items-start gap-4">
-                                    <div
-                                        class="h-9 w-9 rounded-2xl bg-white/10 ring-1 ring-white/15 flex items-center justify-center text-sm font-semibold">
-                                        3</div>
-                                    <div>
-                                        <div class="font-semibold">Ownership & growth</div>
-                                        <div class="mt-1 text-sm text-slate-300 leading-6">
-                                            Active involvement to support long-term growth strategies and operating
-                                            outcomes.
-                                        </div>
-                                    </div>
-                                </div>
-                            </li>
-                        </ol>
-
-                        <div class="mt-6 text-xs text-slate-400 leading-6">
-                            Note: eligibility, jurisdiction, and compliance requirements may limit scope or
-                            availability.
-                        </div>
-                    </div>
-                </div>
-            </section>
-
-            <!-- Contact -->
-            <section id="contact" class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 pb-16">
-                <div class="rounded-3xl bg-gradient-to-b from-white/10 to-white/5 ring-1 ring-white/10 p-7 sm:p-10">
-                    <div class="grid lg:grid-cols-12 gap-10 items-start">
-                        <div class="lg:col-span-6">
-                            <h2 class="text-2xl sm:text-3xl font-semibold tracking-tight">Contact</h2>
-                            <p class="mt-3 text-slate-200 leading-7">
-                                Share a brief overview of the situation or opportunity. If aligned, we’ll respond with
-                                next steps.
-                            </p>
-
-                            <div class="mt-6 rounded-2xl bg-slate-950/40 ring-1 ring-white/10 p-5">
-                                <div class="text-xs text-slate-400">Helpful details to include</div>
-                                <ul class="mt-2 text-sm text-slate-300 leading-6 list-disc list-inside space-y-1">
-                                    <li>Sector (public markets / private / energy)</li>
-                                    <li>Capital amount, structure, and timeline</li>
-                                    <li>Jurisdiction & constraints</li>
-                                    <li>Control vs. minority preference</li>
-                                </ul>
-                            </div>
-
-                            <p class="mt-6 text-xs text-slate-400 leading-6">
-                                This page is informational only. It does not constitute an offer, solicitation, or
-                                investment advice.
-                                Availability may vary by jurisdiction, eligibility, and compliance requirements.
-                            </p>
-                        </div>
-
-                        <div class="lg:col-span-6">
-                            <form class="space-y-3"
-                                onsubmit="event.preventDefault(); alert('Replace this alert with your form handler (Formspree/Resend/Vercel function).');">
-                                <div class="grid sm:grid-cols-2 gap-3">
-                                    <input
-                                        class="w-full rounded-2xl bg-slate-950/60 ring-1 ring-white/10 px-4 py-3 text-sm placeholder:text-slate-500 focus:outline-none focus:ring-2 focus:ring-emerald-400/60"
-                                        placeholder="Full name" required />
-                                    <input type="email"
-                                        class="w-full rounded-2xl bg-slate-950/60 ring-1 ring-white/10 px-4 py-3 text-sm placeholder:text-slate-500 focus:outline-none focus:ring-2 focus:ring-emerald-400/60"
-                                        placeholder="Email" required />
-                                </div>
-                                <input
-                                    class="w-full rounded-2xl bg-slate-950/60 ring-1 ring-white/10 px-4 py-3 text-sm placeholder:text-slate-500 focus:outline-none focus:ring-2 focus:ring-emerald-400/60"
-                                    placeholder="Company / Opportunity" />
-                                <textarea rows="5"
-                                    class="w-full rounded-2xl bg-slate-950/60 ring-1 ring-white/10 px-4 py-3 text-sm placeholder:text-slate-500 focus:outline-none focus:ring-2 focus:ring-emerald-400/60"
-                                    placeholder="Message (sector, structure, timeline, jurisdiction)"
-                                    required></textarea>
-
-                                <button
-                                    class="w-full rounded-2xl bg-emerald-400 text-slate-950 px-5 py-3 text-sm font-semibold hover:bg-emerald-300"
-                                    type="submit">
-                                    Send inquiry
-                                </button>
-
-                                <!-- Optional direct email line -->
-                                <div class="text-xs text-slate-400">
-                                    Or email: <span class="text-slate-200 font-semibold">contact@kasvora.capital</span>
-                                    <!-- replace -->
-                                </div>
-                            </form>
-                        </div>
-                    </div>
-                </div>
-            </section>
-
-            <!-- Footer -->
-            <footer class="border-t border-white/10">
-                <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 py-10 grid md:grid-cols-12 gap-6">
-                    <div class="md:col-span-7">
-                        <div class="flex items-center gap-3">
-                            <div
-                                class="h-9 w-9 rounded-2xl bg-white/10 ring-1 ring-white/15 flex items-center justify-center">
-                                <span class="text-sm font-semibold tracking-wide">K</span>
-                            </div>
-                            <div>
-                                <div class="font-semibold">Kasvora Capital</div>
-                                <div class="text-xs text-slate-400">Private Investment & Strategic Holdings</div>
-                            </div>
-                        </div>
-
-                        <p class="mt-4 text-xs text-slate-400 leading-6 max-w-xl">
-                            Disclosures: This website is for informational purposes only and does not constitute an
-                            offer to sell or a solicitation to buy
-                            any securities or financial instruments. Any transaction is subject to diligence,
-                            documentation, and compliance requirements.
-                        </p>
-                    </div>
-
-                    <div class="md:col-span-5 md:text-right">
-                        <div class="text-sm text-slate-300">© <span id="year"></span> Kasvora Capital. All rights
-                            reserved.</div>
-                        <div class="mt-2 text-xs text-slate-500">
-                            Strategic holdings • Public markets • Energy • Control & special situations
-                        </div>
-                    </div>
-                </div>
-            </footer>
-        </main>
-    </div>
+        <div
+            class="max-w-7xl mx-auto pt-8 border-t border-zinc-900 flex flex-wrap justify-between items-center gap-4 text-zinc-600">
+            <p>&copy; 2026 STRATTNERS®. All international sovereign rights reserved.</p>
+            <p class="tracking-widest uppercase text-[10px]">Security Protocol Verified</p>
+        </div>
+    </footer>
 
     <script>
-        // Mobile menu toggle
-        const btn = document.getElementById('menuBtn');
-        const menu = document.getElementById('mobileMenu');
-        btn?.addEventListener('click', () => menu.classList.toggle('hidden'));
-
-        // Current year
-        document.getElementById('year').textContent = new Date().getFullYear();
+        lucide.createIcons();
     </script>
 </body>
 
